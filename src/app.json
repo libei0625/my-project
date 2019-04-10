@@ -4,9 +4,8 @@
     "pages/logs/main",
     "pages/counter/main",
     "pages/mine/main",
-    "pages/map/main",
-    "pages/movie/main",
-    "pages/cinema/main"
+    "pages/cinema/main",
+    "pages/movie/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -27,7 +26,7 @@
       "selectedIconPath": "/static/tabs/movie-active.png"
     }, {
       "text": "影院",
-      "pagePath": "pages/map/main",
+      "pagePath": "pages/cinema/main",
       "iconPath": "/static/tabs/cinema.png",
       "selectedIconPath": "/static/tabs/cinema-active.png"
     }, {
