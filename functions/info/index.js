@@ -2,7 +2,7 @@ const cloud = require('wx-server-sdk')
 cloud.init()
 const db = cloud.database()
 exports.main = async (event, context) =>{
-    return await db.collection('info').add({
+    return await db.collection('order').add({
         data:{
             user: context.OPENID
         }
