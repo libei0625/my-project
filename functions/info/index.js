@@ -4,7 +4,8 @@ const db = cloud.database()
 exports.main = async (event, context) =>{
     return await db.collection('order').add({
         data:{
-            user: context.OPENID
+            userid: context.OPENID,
+            action: '我的'
         }
     })
 }
