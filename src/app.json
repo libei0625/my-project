@@ -4,7 +4,9 @@
     "pages/logs/main",
     "pages/counter/main",
     "pages/mine/main",
-    "pages/map/main"
+    "pages/map/main",
+    "pages/movie/main",
+    "pages/cinema/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -19,15 +21,15 @@
     "borderStyle": "white",
 
     "list": [{
-      "text": "首页",
+      "text": "电影",
       "pagePath": "pages/index/main",
-      "iconPath": "/static/tabs/home.png",
-      "selectedIconPath": "/static/tabs/home-active.png"
+      "iconPath": "/static/tabs/movie.png",
+      "selectedIconPath": "/static/tabs/movie-active.png"
     }, {
-      "text": "附近",
+      "text": "影院",
       "pagePath": "pages/map/main",
-      "iconPath": "/static/tabs/map.png",
-      "selectedIconPath": "/static/tabs/map-active.png"
+      "iconPath": "/static/tabs/cinema.png",
+      "selectedIconPath": "/static/tabs/cinema-active.png"
     }, {
       "text": "我的",
       "pagePath": "pages/mine/main",

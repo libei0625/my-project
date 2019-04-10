@@ -5,7 +5,7 @@ exports.main = async (event, context) =>{
     return await db.collection('order').add({
         data:{
             userid: context.OPENID,
-            action: '我的'
+            action: '新增'
         }
     })
 }
