@@ -25,7 +25,7 @@
       "iconPath": "/static/tabs/movie.png",
       "selectedIconPath": "/static/tabs/movie-active.png"
     }, {
-      "text": "影院",
+      "text": "湖大影院",
       "pagePath": "pages/cinema/main",
       "iconPath": "/static/tabs/cinema.png",
       "selectedIconPath": "/static/tabs/cinema-active.png"
