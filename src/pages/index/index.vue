@@ -43,7 +43,7 @@
 </i-grid>
     <i-panel i-class="top-padding" >
       <view class="top-padding"></view>
-      <i-card title="反贪风暴" i-class="top-padding" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+      <i-card title="反贪风暴" i-class="top-padding" extra="额外内容" thumb="timg(1).png">
         <view slot="content">主演：古天乐，郑嘉颖，林峯</view>
         <view slot="footer">暂无评分</view>
       </i-card>
