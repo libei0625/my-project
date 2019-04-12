@@ -18,41 +18,27 @@
     <i-grid i-class="no-border">
     <i-grid-item i-class="no-border">
         <i-grid-icon>
-            <image src="/static/grid/1.png" />
+            <image src="/static/grid/会员.png" />
         </i-grid-icon>
-        <i-grid-label>西点</i-grid-label>
+        <i-grid-label>会员</i-grid-label>
     </i-grid-item>
     <i-grid-item i-class="no-border">
         <i-grid-icon>
-            <image src="/static/grid/2.png" />
+            <image src="/static/grid/电影.png" />
         </i-grid-icon>
-        <i-grid-label>主食</i-grid-label>
+        <i-grid-label>电影</i-grid-label>
     </i-grid-item>
     <i-grid-item i-class="no-border">
         <i-grid-icon>
-            <image src="/static/grid/3.png" />
+            <image src="/static/grid/推荐.png" />
         </i-grid-icon>
-        <i-grid-label>外卖</i-grid-label>
-    </i-grid-item>
-</i-grid>
-    <i-grid i-class="no-border">
-    <i-grid-item i-class="no-border">
-        <i-grid-icon>
-            <image src="/static/grid/4.png" />
-        </i-grid-icon>
-        <i-grid-label>饮品</i-grid-label>
+        <i-grid-label>推荐</i-grid-label>
     </i-grid-item>
     <i-grid-item i-class="no-border">
         <i-grid-icon>
-            <image src="/static/grid/5.png" />
+            <image src="/static/grid/最近.png" />
         </i-grid-icon>
-        <i-grid-label>零食</i-grid-label>
-    </i-grid-item>
-    <i-grid-item i-class="no-border">
-        <i-grid-icon>
-            <image src="/static/grid/6.png" />
-        </i-grid-icon>
-        <i-grid-label>面食</i-grid-label>
+        <i-grid-label>最近</i-grid-label>
     </i-grid-item>
 </i-grid>
     <i-panel title="吃货推荐">
