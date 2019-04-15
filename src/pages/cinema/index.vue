@@ -2,8 +2,8 @@
 <div style="width: 100%; height: 100%;">
   <map
   id="map"
-  longitude="113.324520"
-  latitude="23.099994"
+  longitude="114.340713"
+  latitude="30.58292"
   scale="14"
   :controls="controls"
   @controltap="controltap"
@@ -12,7 +12,7 @@
   :polyline="polyline"
   @regionchange="regionchange"
   show-location
-  style="width: 100%; height: 300px;"
+  style="width: 100%; height: 100%;"
 ></map>
 </div>
 </template>
@@ -24,20 +24,20 @@ export default {
   data () {
     return {
     markers: [{
-      iconPath: '/resources/others.png',
+      iconPath: '/static/images/定位.png',
       id: 0,
-      latitude: 23.099994,
-      longitude: 113.324520,
+      latitude: 30.58292,
+      longitude: 114.340713,
       width: 50,
       height: 50
     }],
     polyline: [{
       points: [{
-        longitude: 113.3245211,
-        latitude: 23.10229
+        longitude: 114.340713,
+        latitude: 30.58292
       }, {
-        longitude: 113.324520,
-        latitude: 23.21229
+        longitude: 114.340713,
+        latitude: 30.58292
       }],
       color: '#FF0000DD',
       width: 2,
@@ -70,5 +70,5 @@ export default {
 </script>
 
 <style>
-body,html{height:100%}
+body,html{height: 100%}
 </style>
