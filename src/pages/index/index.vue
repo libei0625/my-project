@@ -43,7 +43,7 @@
 </i-grid>
     <i-panel i-class="top-padding" >
       <view class="top-padding"></view>
-      <i-card title="反贪风暴" i-class="top-padding" extra="额外内容" thumb="/static/grid/fan.png">
+      <i-card title="反贪风暴4" i-class="top-padding" extra="额外内容" thumb="/static/grid/fan.png">
         <view slot="content">主演：古天乐，郑嘉颖，林峯</view>
         <view slot="footer">暂无评分</view>
       </i-card>
