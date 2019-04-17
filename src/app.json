@@ -29,10 +29,15 @@
       "iconPath": "/static/tabs/cinema.png",
       "selectedIconPath": "/static/tabs/cinema-active.png"
     }, {
-      "text": "我的",
+      "text": "湖大影院",
       "pagePath": "pages/mine/main",
-      "iconPath": "/static/tabs/mine.png",
-      "selectedIconPath": "/static/tabs/mine-active.png"
+      "iconPath": "/static/tabs/cinema.png",
+      "selectedIconPath": "/static/tabs/cinema-active.png"
+    }, {
+      "text": "湖大影院",
+      "pagePath": "pages/cinema/main",
+      "iconPath": "/static/tabs/cinema.png",
+      "selectedIconPath": "/static/tabs/cinema-active.png"
     }],
     "position": "bottom"
   }
