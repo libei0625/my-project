@@ -4,7 +4,8 @@
     "pages/counter/main",
     "pages/cinema/main",
     "pages/movie/main",
-    "pages/min/main"
+    "pages/mine/main",
+    "pages/logs/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -29,10 +30,10 @@
       "iconPath": "/static/tabs/cinema.png",
       "selectedIconPath": "/static/tabs/cinema-active.png"
     }, {
-      "text": "湖大影院",
-      "pagePath": "pages/min/main",
-      "iconPath": "/static/tabs/cinema.png",
-      "selectedIconPath": "/static/tabs/cinema-active.png"
+      "text": "我的",
+      "pagePath": "pages/mine/main",
+      "iconPath": "/static/tabs/mine.png",
+      "selectedIconPath": "/static/tabs/mine-active.png"
     }],
     "position": "bottom"
   }
