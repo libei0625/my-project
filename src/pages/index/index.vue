@@ -43,6 +43,11 @@
 </i-grid>
     <i-panel i-class="top-padding" >
       <view class="top-padding"></view>
+      <view class="setting" bindtap='jumpLogin'>
+      <image class='btnImg' src='/static/grid/timg (1).png' style="width:160rpx;height:220rpx;"></image>
+      <text style="font-size:0.8rem;padding:10px"><text class="movie">{{movie}}</text>\n{{evaluate}}</text>
+      </view>
+      <view class="top-padding"></view>
       <i-card title="反贪风暴4" i-class="top-padding" extra="额外内容" thumb="/static/grid/fan.png">
         <view slot="content">主演：古天乐，郑嘉颖，林峯</view>
         <view slot="footer">暂无评分</view>
@@ -70,6 +75,8 @@
 import card from '@/components/card'
 export default {
   data : {
+    movie: '反贪风暴4',
+    evaluate: '暂无评分',
     imgUrls: [
       '/static/images/1.jpg',
       '/static/images/2.jpg',
@@ -111,7 +118,16 @@ div >>> .no-border {
   border-width: 0pt;
 }
 .top-padding {
-  padding-top: 50rpx;
+  padding-top: 30rpx;
+}
+.movie{
+  color:red;
+}
+.setting{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
 }
 .userinfo {
   display: flex;
