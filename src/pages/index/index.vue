@@ -41,11 +41,26 @@
         <i-grid-label>最近</i-grid-label>
     </i-grid-item>
 </i-grid>
-    <i-panel i-class="top-padding" >
-      <view class="top-padding"></view>
+    <i-panel>
+    <view class="setting" bindtap='jumpLogin'>
+      <image src='/static/grid/timg (1).png' style="width:130rpx;height:185rpx;"></image>
+      <text style="padding:10px">
+        <text class="movie">{{movie1}}</text>
+        <text class="evaluate">\n{{evaluate1}}</text>
+        <text class="actor">\n{{actor1}}</text> 
+        <text class="play">\n{{play1}}</text> 
+      </text>
+      <i-button i-class="button" type="primary" bind:click="handleClick">购票</i-button>
+      </view>
       <view class="setting" bindtap='jumpLogin'>
-      <image class='btnImg' src='/static/grid/timg (1).png' style="width:160rpx;height:220rpx;"></image>
-      <text style="font-size:0.8rem;padding:10px"><text class="movie">{{movie}}</text>\n{{evaluate}}</text>
+      <image src='/static/grid/timg (1).png' style="width:130rpx;height:185rpx;"></image>
+      <text style="padding:10px">
+        <text class="movie">{{movie1}}</text>
+        <text class="evaluate">\n{{evaluate1}}</text>
+        <text class="actor">\n{{actor1}}</text> 
+        <text class="play">\n{{play1}}</text> 
+      </text>
+      <i-button i-class="button" type="primary" bind:click="handleClick">购票</i-button>
       </view>
       <view class="top-padding"></view>
       <i-card title="反贪风暴4" i-class="top-padding" extra="额外内容" thumb="/static/grid/fan.png">
@@ -75,8 +90,10 @@
 import card from '@/components/card'
 export default {
   data : {
-    movie: '反贪风暴4',
-    evaluate: '暂无评分',
+    movie1: '反贪风暴4',
+    evaluate1: '暂无评分',
+    actor1: '主演：古天乐，郑嘉颖，林峯',
+    play1: '今天34家影院放映1198场',
     imgUrls: [
       '/static/images/1.jpg',
       '/static/images/2.jpg',
@@ -121,13 +138,29 @@ div >>> .no-border {
   padding-top: 30rpx;
 }
 .movie{
-  color:red;
+  color:black;
+  font-size: 36rpx;
+}
+.evaluate{
+  color:#696969;
+  font-size:30rpx; 
+}
+.actor{
+  color:#696969;
+  font-size:30rpx;
+}
+.play{
+  color:rgb(148, 147, 147);
+  font-size:30rpx;
 }
 .setting{
   display: flex;
   flex-direction: row;
   align-items: center;
-  
+  margin: 13rpx;
+}
+.button{
+  size:small;
 }
 .userinfo {
   display: flex;
