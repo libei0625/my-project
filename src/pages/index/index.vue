@@ -41,48 +41,67 @@
         <i-grid-label>最近</i-grid-label>
     </i-grid-item>
 </i-grid>
-    <i-panel>
-    <view class="setting" bindtap='jumpLogin'>
-      <image src='/static/grid/timg (1).png' style="width:130rpx;height:185rpx;"></image>
-      <text style="padding:10px">
-        <text class="movie">{{movie1}}</text>
-        <text class="evaluate">\n{{evaluate1}}</text>
-        <text class="actor">\n{{actor1}}</text> 
-        <text class="play">\n{{play1}}</text> 
+      <i-panel><view class="setting" bindtap='jumpLogin'>
+      <image src='/static/grid/反贪4.png' style="width:130rpx;height:180rpx;"></image>
+      <text style="padding:7px;line-height:17px">
+        <text class="movie">{{movie[0]}}</text>
+        <text class="evaluate">\n{{evaluate[0]}}</text>
+        <text class="actor">\n{{actor[0]}}</text> 
+        <text class="play">\n{{play[0]}}</text> 
       </text>
-      <i-button i-class="button" type="primary" bind:click="handleClick">购票</i-button>
-      </view>
-      <view class="setting" bindtap='jumpLogin'>
-      <image src='/static/grid/timg (1).png' style="width:130rpx;height:185rpx;"></image>
-      <text style="padding:10px">
-        <text class="movie">{{movie1}}</text>
-        <text class="evaluate">\n{{evaluate1}}</text>
-        <text class="actor">\n{{actor1}}</text> 
-        <text class="play">\n{{play1}}</text> 
+      <input style="position: absolute;right: 10px;top: 28px;font-size:11px;background-color:#3bb3e0;color:white;margin:2.5px" type="button" value="购票" />
+      </view></i-panel>
+      <i-panel><view class="setting" bindtap='jumpLogin'>
+      <image src='/static/grid/复联4.png' style="width:130rpx;height:180rpx;"></image>
+      <text style="padding:7px;line-height:17px">
+        <text class="movie">{{movie[1]}}</text>
+        <text class="evaluate">\n{{evaluate[1]}}</text>
+        <text class="actor">\n{{actor[1]}}</text> 
+        <text class="play">\n{{play[1]}}</text> 
       </text>
-      <i-button i-class="button" type="primary" bind:click="handleClick">购票</i-button>
-      </view>
-      <view class="top-padding"></view>
-      <i-card title="反贪风暴4" i-class="top-padding" extra="额外内容" thumb="/static/grid/fan.png">
-        <view slot="content">主演：古天乐，郑嘉颖，林峯</view>
-        <view slot="footer">暂无评分</view>
-      </i-card>
-      <view class="top-padding"></view>
-      <i-card title="卡片标题" i-class="top-padding" extra="额外内容" thumb="/static/grid/调音师.jpg">
-        <view slot="content">内容不错</view>
-        <view slot="footer">尾部内容</view>
-      </i-card>
-      <view class="top-padding"></view>
-      <i-card title="卡片标题" i-class="top-padding" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
-        <view slot="content">内容不错</view>
-        <view slot="footer">尾部内容</view>
-      </i-card>
-      <view class="top-padding"></view>
-      <i-card title="卡片标题" i-class="top-padding" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
-        <view slot="content">内容不错</view>
-        <view slot="footer">尾部内容</view>
-      </i-card>
-    </i-panel>
+      <input style="position: absolute;right: 10px;top: 28px;font-size:11px;background-color:#3bb3e0;color:white;margin:2.5px" type="button" value="购票" />
+      </view></i-panel>
+      <i-panel><view class="setting" bindtap='jumpLogin'>
+      <image src='/static/grid/调音师.png' style="width:130rpx;height:180rpx;"></image>
+      <text style="padding:7px;line-height:17px">
+        <text class="movie">{{movie[2]}}</text>
+        <text class="evaluate">\n{{evaluate[2]}}</text>
+        <text class="actor">\n{{actor[2]}}</text> 
+        <text class="play">\n{{play[2]}}</text> 
+      </text>
+      <input style="position: absolute;right: 10px;top: 28px;font-size:11px;background-color:#3bb3e0;color:white;margin:2.5px" type="button" value="购票" />
+      </view></i-panel>
+      <i-panel><view class="setting" bindtap='jumpLogin'>
+      <image src='/static/grid/皮卡丘.png' style="width:130rpx;height:180rpx;"></image>
+      <text style="padding:7px;line-height:17px">
+        <text class="movie">{{movie[3]}}</text>
+        <text class="evaluate">\n{{evaluate[3]}}</text>
+        <text class="actor">\n{{actor[3]}}</text> 
+        <text class="play">\n{{play[3]}}</text> 
+      </text>
+      <input style="position: absolute;right: 10px;top: 28px;font-size:11px;background-color:#3bb3e0;color:white;margin:2.5px" type="button" value="购票" />
+      </view></i-panel>
+      <i-panel><view class="setting" bindtap='jumpLogin'>
+      <image src='/static/grid/何以为家.png' style="width:130rpx;height:180rpx;"></image>
+      <text style="padding:7px;line-height:17px">
+        <text class="movie">{{movie[4]}}</text>
+        <text class="evaluate">\n{{evaluate[4]}}</text>
+        <text class="actor">\n{{actor[4]}}</text> 
+        <text class="play">\n{{play[4]}}</text> 
+      </text>
+      <input style="position: absolute;right: 10px;top: 28px;font-size:11px;background-color:#3bb3e0;color:white;margin:2.5px" type="button" value="购票" />
+      </view></i-panel>
+      <i-panel><view class="setting" bindtap='jumpLogin'>
+      <image src='/static/grid/祈祷.jpg' style="width:130rpx;height:180rpx;"></image>
+      <text style="padding:7px;line-height:17px">
+        <text class="movie">{{movie[5]}}</text>
+        <text class="evaluate">\n{{evaluate[5]}}</text>
+        <text class="actor">\n{{actor[5]}}</text> 
+        <text class="play">\n{{play[5]}}</text> 
+      </text>
+      <input style="position: absolute;right: 10px;top: 28px;font-size:11px;background-color:#3bb3e0;color:white;margin:2.5px" type="button" value="购票" />
+      </view></i-panel>
+      
   </div>
 </template>
 
@@ -90,10 +109,15 @@
 import card from '@/components/card'
 export default {
   data : {
-    movie1: '反贪风暴4',
-    evaluate1: '暂无评分',
-    actor1: '主演：古天乐，郑嘉颖，林峯',
-    play1: '今天34家影院放映1198场',
+    movie:['反贪风暴4','复仇者联盟4:终局之战','调音师','大侦探皮卡丘','何以为家','祈祷落幕时'],
+    evaluate: ['暂无评分','暂无评分','暂无评分','暂无评分','暂无评分','暂无评分'],
+    actor: ['主演:古天乐，郑嘉颖，林峯',
+    '主演:小罗伯特·唐尼、克里斯·埃文斯、克里斯·海姆斯沃斯、马克·鲁法洛、斯嘉丽·约翰逊、杰瑞米·雷纳、保罗·路德、布丽·拉尔森、唐·钱德尔、凯伦·吉兰、乔什·布洛林等',
+    '主演:阿尤斯曼·库拉纳、塔布 拉迪卡·艾普特、安尔·德霍万',
+    '主演:贾斯提斯·史密斯、凯瑟琳·纽顿、苏琪·沃特豪斯、渡边谦',
+    '主演:赞恩·阿尔·拉菲亚、约丹诺斯·希费罗、博鲁瓦蒂夫·特雷杰·班科尔',
+    '主演:阿部宽、松岛菜菜子'],
+    play: ['2019-04-04上映','2019-04-24上映','2019-04-03上映','2019-05-10上映','2019-04-29上映','2018-01-27上映'],
     imgUrls: [
       '/static/images/1.jpg',
       '/static/images/2.jpg',
@@ -135,33 +159,39 @@ div >>> .no-border {
   border-width: 0pt;
 }
 .top-padding {
-  padding-top: 30rpx;
+  padding-top: 20rpx;
 }
 .movie{
   color:black;
   font-size: 36rpx;
+  font-family:microsoft yahei;
+  font-weight:normal;
+  letter-spacing:1.5px;
 }
 .evaluate{
   color:#696969;
-  font-size:30rpx; 
+  font-size:28rpx; 
+  font-family:microsoft yahei;
+  font-weight:normal;
 }
 .actor{
   color:#696969;
-  font-size:30rpx;
+  font-size:28rpx;
+  font-family:microsoft yahei; 
 }
 .play{
   color:rgb(148, 147, 147);
-  font-size:30rpx;
+  font-size:28rpx;
+  font-family:microsoft yahei;
 }
 .setting{
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 13rpx;
+  margin-left:9px;
+  margin-top: 5px;
 }
-.button{
-  size:small;
-}
+
 .userinfo {
   display: flex;
   flex-direction: column;
