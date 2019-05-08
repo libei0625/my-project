@@ -1,8 +1,5 @@
 <template>
   <div @click="clickHandle">
-    <i-notice-bar icon="systemprompt" loop color="#EE2C2C">
-    湖大电影院上线啦！！！
-    </i-notice-bar>
     <swiper
     :indicator-dots="indicatorDots"
     :autoplay="autoplay"
@@ -49,7 +46,7 @@
         <text class="actor">\n{{actor[0]}}</text> 
         <text class="play">\n{{play[0]}}</text> 
       </text>
-      <input style="position: absolute;right: 10px;top: 28px;font-size:11px;background-color:#3bb3e0;color:white;margin:2.5px" type="button" value="购票" />
+      <input style="position: absolute;right: 10px;top: 28px;font-size:11px;background-color:#3bb3e0;color:white;margin:2.5px" type="button" value="购票" is-link url="/pages/buy/main"/>
       </view></i-panel>
       <i-panel><view class="setting" bindtap='jumpLogin'>
       <image src='/static/grid/复联4.png' style="width:130rpx;height:180rpx;"></image>
@@ -112,11 +109,11 @@ export default {
     movie:['反贪风暴4','复仇者联盟4:终局之战','调音师','大侦探皮卡丘','何以为家','祈祷落幕时'],
     evaluate: ['暂无评分','暂无评分','暂无评分','暂无评分','暂无评分','暂无评分'],
     actor: ['主演:古天乐，郑嘉颖，林峯',
-    '主演:小罗伯特·唐尼、克里斯·埃文斯、克里斯·海姆斯沃斯、马克·鲁法洛、斯嘉丽·约翰逊、杰瑞米·雷纳、保罗·路德、布丽·拉尔森、唐·钱德尔、凯伦·吉兰、乔什·布洛林等',
-    '主演:阿尤斯曼·库拉纳、塔布 拉迪卡·艾普特、安尔·德霍万',
-    '主演:贾斯提斯·史密斯、凯瑟琳·纽顿、苏琪·沃特豪斯、渡边谦',
-    '主演:赞恩·阿尔·拉菲亚、约丹诺斯·希费罗、博鲁瓦蒂夫·特雷杰·班科尔',
-    '主演:阿部宽、松岛菜菜子'],
+    '主演:小罗伯特·唐尼、克里···',
+    '主演:阿尤斯曼·库拉纳、塔···',
+    '主演:贾斯提斯·史密斯、凯···',
+    '主演:赞恩·阿尔·拉菲亚、Y···',
+    '主演:阿部宽、松岛菜菜子···'],
     play: ['2019-04-04上映','2019-04-24上映','2019-04-03上映','2019-05-10上映','2019-04-29上映','2018-01-27上映'],
     imgUrls: [
       '/static/images/1.jpg',
