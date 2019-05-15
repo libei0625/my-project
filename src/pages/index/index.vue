@@ -46,7 +46,7 @@
         <text class="actor">\n{{actor[0]}}</text> 
         <text class="play">\n{{play[0]}}</text> 
       </text>
-      <input style="position: absolute;right: 10px;top: 28px;font-size:11px;background-color:#3bb3e0;color:white;margin:2.5px" type="button" value="购票" is-link url="/pages/buy/main"/>
+      <button class="button">购票</button>
       </view></i-panel>
       <i-panel><view class="setting" bindtap='jumpLogin'>
       <image src='/static/grid/复联4.png' style="width:130rpx;height:180rpx;"></image>
@@ -56,7 +56,7 @@
         <text class="actor">\n{{actor[1]}}</text> 
         <text class="play">\n{{play[1]}}</text> 
       </text>
-      <input style="position: absolute;right: 10px;top: 28px;font-size:11px;background-color:#3bb3e0;color:white;margin:2.5px" type="button" value="购票" />
+      <button class="button">购票</button>
       </view></i-panel>
       <i-panel><view class="setting" bindtap='jumpLogin'>
       <image src='/static/grid/调音师.png' style="width:130rpx;height:180rpx;"></image>
@@ -66,7 +66,7 @@
         <text class="actor">\n{{actor[2]}}</text> 
         <text class="play">\n{{play[2]}}</text> 
       </text>
-      <input style="position: absolute;right: 10px;top: 28px;font-size:11px;background-color:#3bb3e0;color:white;margin:2.5px" type="button" value="购票" />
+      <button class="button">购票</button>
       </view></i-panel>
       <i-panel><view class="setting" bindtap='jumpLogin'>
       <image src='/static/grid/皮卡丘.png' style="width:130rpx;height:180rpx;"></image>
@@ -76,7 +76,7 @@
         <text class="actor">\n{{actor[3]}}</text> 
         <text class="play">\n{{play[3]}}</text> 
       </text>
-      <input style="position: absolute;right: 10px;top: 28px;font-size:11px;background-color:#3bb3e0;color:white;margin:2.5px" type="button" value="购票" />
+      <button class="button">购票</button>
       </view></i-panel>
       <i-panel><view class="setting" bindtap='jumpLogin'>
       <image src='/static/grid/何以为家.png' style="width:130rpx;height:180rpx;"></image>
@@ -86,7 +86,7 @@
         <text class="actor">\n{{actor[4]}}</text> 
         <text class="play">\n{{play[4]}}</text> 
       </text>
-      <input style="position: absolute;right: 10px;top: 28px;font-size:11px;background-color:#3bb3e0;color:white;margin:2.5px" type="button" value="购票" />
+      <button class="button">购票</button>
       </view></i-panel>
       <i-panel><view class="setting" bindtap='jumpLogin'>
       <image src='/static/grid/祈祷.jpg' style="width:130rpx;height:180rpx;"></image>
@@ -96,7 +96,7 @@
         <text class="actor">\n{{actor[5]}}</text> 
         <text class="play">\n{{play[5]}}</text> 
       </text>
-      <input style="position: absolute;right: 10px;top: 28px;font-size:11px;background-color:#3bb3e0;color:white;margin:2.5px" type="button" value="购票" />
+      <button class="button">购票</button>
       </view></i-panel>
       
   </div>
@@ -131,6 +131,19 @@ export default {
   },
 
   methods: {
+    bindViewTap () {
+      const url = '../logs/main'
+      if (mpvuePlatform === 'wx') {
+        mpvue.switchTab({ url })
+      } else {
+        mpvue.navigateTo({ url })
+      }
+    },
+    clickHandle (ev) {
+      console.log('clickHandle:', ev)
+      // throw {message: 'custom test'}
+    }
+  },
   created () {
     // let app = getApp()
   }
@@ -166,6 +179,15 @@ div >>> .no-border {
   color:rgb(148, 147, 147);
   font-size:28rpx;
   font-family:microsoft yahei;
+}
+.button{
+  position: absolute;
+  right: 12px;
+  top: 32px;
+  font-size:14px;
+  background-color:#3bb3e0;
+  color:white;
+  margin:2.5px
 }
 .setting{
   display: flex;
