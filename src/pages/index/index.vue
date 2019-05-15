@@ -133,7 +133,7 @@ export default {
   methods: {
     goType (type) {
       console.log(type)
-      mpvue.navigateTo({ url:'../buy1/buy1' })
+      mpvue.navigateTo({ url:'../buy/1/main' })
     }
   }
 }
