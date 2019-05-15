@@ -5,7 +5,8 @@
     "pages/cinema/main",
     "pages/movie/main",
     "pages/mine/main",
-    "pages/logs/main"
+    "pages/logs/main",
+    "pages/buy1/main"
   ],
   "window": {
     "backgroundTextStyle": "light",

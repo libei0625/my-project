@@ -38,7 +38,7 @@
         <i-grid-label>最近</i-grid-label>
     </i-grid-item>
 </i-grid>
-      <i-panel><view class="setting" bindtap='jumpLogin'>
+      <i-panel><view class="setting">
       <image src='/static/grid/反贪4.png' style="width:130rpx;height:180rpx;"></image>
       <text style="padding:7px;line-height:17px">
         <text class="movie">{{movie[0]}}</text>
@@ -46,9 +46,9 @@
         <text class="actor">\n{{actor[0]}}</text> 
         <text class="play">\n{{play[0]}}</text> 
       </text>
-      <button class="button">购票</button>
+      <button class="button" @click="goType">购票</button>
       </view></i-panel>
-      <i-panel><view class="setting" bindtap='jumpLogin'>
+      <i-panel><view class="setting">
       <image src='/static/grid/复联4.png' style="width:130rpx;height:180rpx;"></image>
       <text style="padding:7px;line-height:17px">
         <text class="movie">{{movie[1]}}</text>
@@ -58,7 +58,7 @@
       </text>
       <button class="button">购票</button>
       </view></i-panel>
-      <i-panel><view class="setting" bindtap='jumpLogin'>
+      <i-panel><view class="setting" >
       <image src='/static/grid/调音师.png' style="width:130rpx;height:180rpx;"></image>
       <text style="padding:7px;line-height:17px">
         <text class="movie">{{movie[2]}}</text>
@@ -68,7 +68,7 @@
       </text>
       <button class="button">购票</button>
       </view></i-panel>
-      <i-panel><view class="setting" bindtap='jumpLogin'>
+      <i-panel><view class="setting">
       <image src='/static/grid/皮卡丘.png' style="width:130rpx;height:180rpx;"></image>
       <text style="padding:7px;line-height:17px">
         <text class="movie">{{movie[3]}}</text>
@@ -78,7 +78,7 @@
       </text>
       <button class="button">购票</button>
       </view></i-panel>
-      <i-panel><view class="setting" bindtap='jumpLogin'>
+      <i-panel><view class="setting">
       <image src='/static/grid/何以为家.png' style="width:130rpx;height:180rpx;"></image>
       <text style="padding:7px;line-height:17px">
         <text class="movie">{{movie[4]}}</text>
@@ -88,7 +88,7 @@
       </text>
       <button class="button">购票</button>
       </view></i-panel>
-      <i-panel><view class="setting" bindtap='jumpLogin'>
+      <i-panel><view class="setting">
       <image src='/static/grid/祈祷.jpg' style="width:130rpx;height:180rpx;"></image>
       <text style="padding:7px;line-height:17px">
         <text class="movie">{{movie[5]}}</text>
@@ -131,21 +131,10 @@ export default {
   },
 
   methods: {
-    bindViewTap () {
-      const url = '../logs/main'
-      if (mpvuePlatform === 'wx') {
-        mpvue.switchTab({ url })
-      } else {
-        mpvue.navigateTo({ url })
-      }
-    },
-    clickHandle (ev) {
-      console.log('clickHandle:', ev)
-      // throw {message: 'custom test'}
+    goType (type) {
+      console.log(type)
+      mpvue.navigateTo({ url:'../buy1/buy1' })
     }
-  },
-  created () {
-    // let app = getApp()
   }
 }
 </script>
