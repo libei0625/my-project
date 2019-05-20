@@ -3,10 +3,9 @@
     "pages/index/main",
     "pages/counter/main",
     "pages/cinema/main",
-    "pages/movie/main",
     "pages/mine/main",
-    "pages/logs/main",
-    "pages/buy1/main"
+    "pages/movie/main"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",

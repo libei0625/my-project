@@ -46,7 +46,7 @@
         <text class="actor">\n{{actor[0]}}</text> 
         <text class="play">\n{{play[0]}}</text> 
       </text>
-      <button class="button" @click="goType">购票</button>
+      <button class="button">购票</button>
       </view></i-panel>
       <i-panel><view class="setting">
       <image src='/static/grid/复联4.png' style="width:130rpx;height:180rpx;"></image>
@@ -131,10 +131,7 @@ export default {
   },
 
   methods: {
-    goType (type) {
-      console.log(type)
-      mpvue.navigateTo({ url:'../buy/1/main' })
-    }
+    
   }
 }
 </script>
