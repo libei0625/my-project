@@ -46,7 +46,7 @@
         <text class="actor">\n{{actor[0]}}</text> 
         <text class="play">\n{{play[0]}}</text> 
       </text>
-      <button class="button">购票</button>
+      <button class="button" @click='jump'>购票</button>
       </view></i-panel>
       <i-panel><view class="setting">
       <image src='/static/grid/复联4.png' style="width:130rpx;height:180rpx;"></image>
@@ -56,7 +56,7 @@
         <text class="actor">\n{{actor[1]}}</text> 
         <text class="play">\n{{play[1]}}</text> 
       </text>
-      <button class="button">购票</button>
+      <button class="button" @click='jump'>购票</button>
       </view></i-panel>
       <i-panel><view class="setting" >
       <image src='/static/grid/调音师.png' style="width:130rpx;height:180rpx;"></image>
@@ -66,7 +66,7 @@
         <text class="actor">\n{{actor[2]}}</text> 
         <text class="play">\n{{play[2]}}</text> 
       </text>
-      <button class="button">购票</button>
+      <button class="button" @click='jump'>购票</button>
       </view></i-panel>
       <i-panel><view class="setting">
       <image src='/static/grid/皮卡丘.png' style="width:130rpx;height:180rpx;"></image>
@@ -76,7 +76,7 @@
         <text class="actor">\n{{actor[3]}}</text> 
         <text class="play">\n{{play[3]}}</text> 
       </text>
-      <button class="button">购票</button>
+      <button class="button" @click='jump'>购票</button>
       </view></i-panel>
       <i-panel><view class="setting">
       <image src='/static/grid/何以为家.png' style="width:130rpx;height:180rpx;"></image>
@@ -86,7 +86,7 @@
         <text class="actor">\n{{actor[4]}}</text> 
         <text class="play">\n{{play[4]}}</text> 
       </text>
-      <button class="button">购票</button>
+      <button class="button" @click='jump'>购票</button>
       </view></i-panel>
       <i-panel><view class="setting">
       <image src='/static/grid/祈祷.jpg' style="width:130rpx;height:180rpx;"></image>
@@ -96,7 +96,7 @@
         <text class="actor">\n{{actor[5]}}</text> 
         <text class="play">\n{{play[5]}}</text> 
       </text>
-      <button class="button">购票</button>
+      <button class="button" @click='jump'>购票</button>
       </view></i-panel>
       
   </div>
@@ -131,7 +131,11 @@ export default {
   },
 
   methods: {
-    
+    jump(){
+    wx.navigateTo({
+       url:'../counter/main'
+    })
+    }
   }
 }
 </script>
