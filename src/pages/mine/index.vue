@@ -7,7 +7,7 @@
     <open-data type="userNickName"></open-data>
     </view>
     <i-cell-group>
-    <i-cell title="我的收藏" ></i-cell>
+    <i-cell title="我的会员" ></i-cell>
     <i-cell title="接收通知">
         <switch slot="footer" checked />
     </i-cell>
