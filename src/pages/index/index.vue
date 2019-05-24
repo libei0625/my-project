@@ -1,8 +1,7 @@
 <template>
-  <div @click="clickHandle">
+  <div>
 
     <swiper
-    :indicator-dots="indicatorDots"
     :autoplay="autoplay"
     :interval="interval"
     :duration="duration"
@@ -27,10 +26,10 @@
         <text style="padding:7px;line-height:17px">
           <text class="movie">{{item.name}}</text>
           <text class="evaluate">\n{{item.evaluate}}</text>
-          <text class="actor">\演员:{{item.actor}}</text> 
+          <text class="actor">\n演员:{{item.actor}}</text> 
           <text class="play">\n{{item.play}}上映</text> 
         </text>
-        <button class="button" @click='jump'>购票</button>
+        <button class="button" @click='jump(item)'>购票</button>
       </view>
     </i-panel>
 
@@ -43,7 +42,7 @@ import top from '@/data/top.json'
 export default {
   data : {
     grid:[
-      {type:"1","name":"会员","img":"/static/grid/会员.png","url":"../ticket/main"},
+      {type:"1","name":"会员","img":"/static/grid/会员.png","url":"../vip/main"},
       {type:"2","name":"电影","img":"/static/grid/电影.png","url":"../ticket/main"},
       {type:"3","name":"推荐","img":"/static/grid/推荐.png","url":"../ticket/main"},
       {type:"4","name":"最近","img":"/static/grid/最近.png","url":"../ticket/main"}
@@ -68,21 +67,18 @@ export default {
     goToJump(url){
       wx.navigateTo({url})
     },
-    jump(){
+    jump(item){
     wx.navigateTo({
-       url:'../ticket/main'
+       url:'../ticket/main?id='+item.id+'&name='+item.name+'&evaluate='+item.evaluate+
+       '&actor='+item.actor
     })
     }
   }
 }
 </script>
-
 <style scoped>
 div >>> .no-border {
   border-width: 0pt;
-}
-.top-padding {
-  padding-top: 20rpx;
 }
 .movie{
   color:black;

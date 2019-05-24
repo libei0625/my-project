@@ -1,18 +1,22 @@
 <template>
   <div >
     <i-panel>
-     <button class="button">购票</button>
+      <text>{{name}}</text>
+      <button>{{name}}购票</button>
     </i-panel>
   </div>
 </template>
 
 <script>
-// Use Vuex
-import store from './store'
 
 export default {
   methods: {
+  },
+  Data(){
     
+  },
+  onLoad(option){
+    console.log(option.name)
   }
 }
 </script>

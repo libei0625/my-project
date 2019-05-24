@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/main",
-    "pages/counter/main",
+    "pages/ticket/main",
+    "pages/vip/main",
     "pages/cinema/main",
     "pages/mine/main",
     "pages/movie/main"
