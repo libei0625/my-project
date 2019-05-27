@@ -49,8 +49,6 @@
 
 <script>
 // Use Vuex
-
-
 export default {
   methods: {
   },
