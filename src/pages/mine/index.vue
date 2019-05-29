@@ -7,11 +7,11 @@
     <open-data type="userNickName"></open-data>
     </view>
     <i-cell-group>
-    <i-cell title="我的会员" ></i-cell>
-    <i-cell title="接收通知">
+      <i-cell @click="clickHandle" title="我的会员" ></i-cell>
+      <i-cell title="接收通知">
         <switch slot="footer" checked />
-    </i-cell>
-</i-cell-group>
+      </i-cell>
+    </i-cell-group>
   </div>
 </template>
 
@@ -42,9 +42,10 @@ export default {
         mpvue.navigateTo({ url })
       }
     },
-    clickHandle (ev) {
-      console.log('clickHandle:', ev)
-      // throw {message: 'custom test'}
+    clickHandle () {
+      wx.navigateTo({
+        url:'../vip/main'
+      })
     }
   },
 

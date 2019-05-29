@@ -69,7 +69,7 @@ export default {
     jump(item){
     wx.navigateTo({
        url:'../ticket/main?id='+item.id+'&name='+item.name+'&evaluate='+item.evaluate+
-       '&actor='+item.actor
+       '&actor='+item.actor+'&play='+item.play+'&img='+item.img+'&introduce='+item.introduce
     })
     }
   }
