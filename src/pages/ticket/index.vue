@@ -1,8 +1,8 @@
 <template>
   <div >
     <i-panel>
-      <text>{{name}}</text>
-      <button>{{name}}购票</button>
+      <text>{{option.name}}</text>
+      <button>{{option.name}}购票</button>
     </i-panel>
   </div>
 </template>
@@ -12,11 +12,14 @@
 export default {
   methods: {
   },
-  Data(){
-    
+  data(){
+   return{
+      option:[]
+   }
   },
   onLoad(option){
-    console.log(option.name)
+   this.option=option;
+   console.log(option)
   }
 }
 </script>

@@ -1,6 +1,5 @@
 <template>
   <div>
-
     <swiper
     :autoplay="autoplay"
     :interval="interval"
@@ -43,7 +42,7 @@ export default {
   data : {
     grid:[
       {type:"1","name":"会员","img":"/static/grid/会员.png","url":"../vip/main"},
-      {type:"2","name":"电影","img":"/static/grid/电影.png","url":"../ticket/main"},
+      {type:"2","name":"电影","img":"/static/grid/电影.png","url":"../film/main"},
       {type:"3","name":"推荐","img":"/static/grid/推荐.png","url":"../ticket/main"},
       {type:"4","name":"最近","img":"/static/grid/最近.png","url":"../ticket/main"}
     ],
@@ -90,7 +89,6 @@ div >>> .no-border {
 .evaluate{
   color:#696969;
   font-size:28rpx; 
-  font-family:microsoft yahei;
   font-weight:normal;
 }
 .actor{
@@ -120,43 +118,8 @@ div >>> .no-border {
   margin-top: 5px;
 }
 
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
 
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 150px;
-}
-
-.form-control {
-  display: block;
-  padding: 0 12px;
-  margin-bottom: 5px;
-  border: 1px solid #ccc;
-}
-.all{
-  width:7.5rem;
-  height:1rem;
-  background-color:blue;
-}
-.all:after{
-  display:block;
-  content:'';
-  clear:both;
-}
 .left{
   float:left;
   width:3rem;
