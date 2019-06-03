@@ -43,8 +43,8 @@ export default {
     grid:[
       {type:"1","name":"会员","img":"/static/grid/会员.png","url":"../vip/main"},
       {type:"2","name":"电影","img":"/static/grid/电影.png","url":"../film/main"},
-      {type:"3","name":"推荐","img":"/static/grid/推荐.png","url":"../ticket/main"},
-      {type:"4","name":"最近","img":"/static/grid/最近.png","url":"../ticket/main"}
+      {type:"3","name":"推荐","img":"/static/grid/推荐.png","url":"../film/main"},
+      {type:"4","name":"最近","img":"/static/grid/最近.png","url":"../film/main"}
     ],
     imgUrls: [
       '/static/images/1.jpg',
@@ -115,7 +115,7 @@ div >>> .no-border {
   flex-direction: row;
   align-items: center;
   margin-left:9px;
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
 

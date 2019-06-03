@@ -6,7 +6,8 @@
     "pages/cinema/main",
     "pages/mine/main",
     "pages/movie/main",
-    "pages/film/main"
+    "pages/film/main",
+    "pages/add/main"
     
   ],
   "window": {
