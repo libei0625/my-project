@@ -14,8 +14,8 @@
         </view>
       </view>
     </i-panel>
-    <button class="button" @click="jumpToAdd">购票</button>
-    <i-panel style="margin-top:4px">
+
+    <i-panel style="margin-top:2px">
      <view class="li"  @click='changeToggle'>
         <view>剧情简介：</view>
         <image :src='hides[1]' style="margin-top:7px;height:25px;width:25px"></image>
@@ -26,6 +26,23 @@
       </block>
     </view>
     </i-panel>
+    
+    <i-panel hide-border='true' >{{option.name}}单价：30元/张</i-panel>
+    <i-panel hide-border='true' style="margin-left:1px;margin-top:0.1px">
+      <view style="width:100%; display:flex;">
+        <view>姓　名：</view>
+        <input :value="username" @change="changeUsername($event)" style="border: 1px solid;border-color: black;width:70%;"
+         maxlength="16" />
+      </view>
+    </i-panel>
+    <i-panel hide-border='true' style="margin:0px;">
+      <view style="width:100%; display:flex;">
+        <view>票　数：</view>
+        <input :value="amount" @change="changeAmount($event)" style="border: 1px solid;border-color: black;width:70%;"
+          maxlength="16"  />
+      </view>
+    </i-panel>
+    <i-panel style="margin:0.4px"><view><button class="button" @click="jumpToAdd()">购票</button></view></i-panel>
   </div>
 </template>
 
@@ -34,22 +51,39 @@
 export default {
   methods: {
     changeToggle(){
-    if (this.hides[0]==true && this.hides[1]=='/static/images/down.png'){
-      this.hides=[false,'/static/images/up.png'];
-    }else{
-      this.hides=[true,'/static/images/down.png'];
-    }
-
-  },
+      if (this.hides[0]==true && this.hides[1]=='/static/images/down.png'){
+        this.hides=[false,'/static/images/up.png'];
+      }else{
+        this.hides=[true,'/static/images/down.png'];
+      }
+    },
     jumpToAdd(){
-      wx.navigateTo({
-        url:"../add/main"
-      })
-    }
+      if (this.username && this.amount) {
+        wx.showToast({
+          title: "预购成功",
+          icon: 'success',
+          duration: 2000
+        })
+      } else {
+        wx.showToast({
+          title: '信息不完整',
+          icon: 'none',
+          duration: 2000
+        })
+      }
+    },
+    changeUsername (event) {
+      this.username = event.mp.detail.value
+    },
+    changeAmount (event) {
+      this.amount = event.mp.detail.value
+    },
   },
   data:{
     hides:[true,'/static/images/down.png'],
-    option:[]
+    option:[],
+    username:"",
+    amount:""
   },
   onLoad(option){
    this.option=option;
