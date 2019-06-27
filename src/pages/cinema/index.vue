@@ -13,7 +13,8 @@
   @regionchange="regionchange"
   show-location
   style="width: 100%; height: 100%;"
-></map>
+  enable-zoom="false"
+  show-compass="true"></map>
 </div>
 </template>
 
